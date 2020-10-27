@@ -121,7 +121,13 @@ video {
     justify-content: space-between;
     padding: 0 3rem 2rem 3rem;
   }
+
   .item {
     max-width: 400px;
+  }
+
+  .about .item {
+    font-size: 1.2em;
+    white-space: nowrap;
   }
 }
