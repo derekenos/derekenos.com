@@ -9,6 +9,10 @@ body {
   margin: 0;
 }
 
+body > * {
+  padding: 0.4rem 1rem;
+}
+
 video,
 img,
 iframe {
@@ -49,6 +53,7 @@ h3 {
 nav {
   display: table;
   width: 100%;
+  padding: 0;
 }
 
 nav > ol {
@@ -89,16 +94,11 @@ video {
 .content {
   display: flex;
   flex-flow: column;
-  padding-bottom: 2rem;
+  padding: 0 0 2rem 0;
 }
 
 .item {
   padding: 1rem;
-}
-
-.ambitions > p,
-.ambitions > h1 {
-  padding: 0.5rem 1rem;
 }
 
 @media screen and (min-width: 1024px) {
