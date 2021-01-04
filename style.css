@@ -96,6 +96,11 @@ video {
   padding: 1rem;
 }
 
+.ambitions > p,
+.ambitions > h1 {
+  padding: 0.5rem 1rem;
+}
+
 @media screen and (min-width: 1024px) {
   nav {
     display: block;
