@@ -97,6 +97,12 @@ video {
   padding: 0 0 2rem 0;
 }
 
+body > h1 {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  border: solid 1px #222;
+}
+
 .item {
   padding: 1rem;
 }
@@ -134,10 +140,5 @@ video {
 
   .item {
     max-width: 400px;
-  }
-
-  .contact .item {
-    font-size: 1.2em;
-    max-width: 100%;
   }
 }
