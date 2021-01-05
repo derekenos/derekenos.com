@@ -101,6 +101,10 @@ video {
   padding: 1rem;
 }
 
+.item.wide {
+  max-width: none;
+}
+
 @media screen and (min-width: 1024px) {
   nav {
     display: block;
