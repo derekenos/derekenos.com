@@ -148,3 +148,9 @@ body > h1 {
     max-width: 400px;
   }
 }
+
+.patreon-widget {
+  position: fixed !important;
+  bottom: 0.5rem;
+  right: 0.5rem;
+}
