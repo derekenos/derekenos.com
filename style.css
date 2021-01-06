@@ -153,4 +153,11 @@ body > h1 {
   position: fixed !important;
   bottom: 0.5rem;
   right: 0.5rem;
+  opacity: 0.85;
+  animation: fade-in 1s ease-in;
+}
+
+@keyframes fade-in {
+  0% { opacity: 0 }
+  100% { opacity: 0.85 }
 }
