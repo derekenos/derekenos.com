@@ -1,0 +1,227 @@
+
+* {
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #373366;
+  color: #eef;
+  margin: 0;
+}
+
+iframe,
+img,
+video {
+  max-width: 90%;
+  border-radius: 8px;
+}
+
+a:link,
+a:visited {
+  color: #aaf;
+}
+
+a:hover,
+a:active {
+  color: #eef;
+}
+
+nav {
+  display: block;
+  padding: 0;
+}
+
+nav > ol {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav > ol > li {
+  flex-grow: 1;
+  font-size: 1.2rem;
+  text-align: center;
+  border: solid #262255 1px;
+}
+
+nav > ol > li.current {
+  border-bottom: none;
+  padding: 1rem 0;
+}
+
+nav > ol > li > a {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  background-color: #151144;
+  padding: 1rem 0;
+}
+
+nav > ol > li > a:hover {
+  text-decoration: underline;
+}
+
+#project-nav-outer {
+  padding: 0;
+  white-space: nowrap;
+}
+
+#project-nav-inner {
+  overflow-x: scroll;
+  scrollbar-width: thin;
+  padding: 1rem 0;
+  font-size: 0;
+}
+
+.project-nav-link {
+  display: inline-block;
+  white-space: norwap;
+  padding: 1.4rem;
+  text-decoration: none;
+  font-size: 1rem;
+  background-color: #000;
+  margin: 0 .1rem;
+  border-radius: 8px;
+}
+
+.project-nav-link:hover {
+  text-decoration: underline;
+}
+
+.project-nav-link.current {
+  background-color: transparent;
+}
+
+.project-nav-link.current:hover {
+  text-decoration: none;
+}
+
+.content > * {
+  padding: 1rem;
+}
+
+.content > .section {
+  padding: 0 0 2rem 0;
+}
+
+.section > * {
+  padding: 0 1rem;
+}
+
+.section > h1 {
+  font-size: 1.4rem;
+  font-weight: normal;
+  line-height: 1.4rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  border: solid 1px #222;
+}
+
+.section > h2 {
+  font-size: 1.1rem;
+  font-weight: normal;
+  padding: 1rem;
+}
+
+.section > h3 {
+  font-size: 1.3rem;
+  font-weight: normal;
+}
+
+.section > ol {
+  list-style: none;
+}
+
+.collection {
+  display: flex;
+  flex-flow: column;
+  padding: 0 0 2rem 0;
+}
+
+.item {
+  padding: 1rem;
+}
+
+.item > h1 {
+  font-size: 1.4rem;
+  font-weight: normal;
+  line-height: 1.4rem;
+}
+
+.item > h2 {
+  font-size: 1rem;
+  font-weight: normal;
+  margin-bottom: .4rem;
+}
+
+.item > h3 {
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: .8rem;
+  font-style: italic;
+  margin-top: 0;
+  opacity: 0.8;
+}
+
+.footer {
+  font-size: .8r
+}
+
+@media screen and (min-width: 1024px) {
+  nav {
+    display: block;
+    border-bottom: solid #888 1px;
+  }
+
+  nav > ol {
+    display: block;
+  }
+
+  nav > ol > li,
+  nav > ol > li.current {
+    padding: 1rem 0 1rem 4rem;
+    font-size: 1.2rem;
+    text-align: left;
+    border: none;
+    display: inline-block;
+  }
+
+  nav > ol > li > a {
+    background-color: transparent;
+  }
+
+  #project-nav-inner {
+    scrollbar-width: auto;
+  }
+
+  .section > * {
+    padding: 0 4rem;
+  }
+
+  .collection {
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 0 3rem 2rem 3rem;
+  }
+
+  .item {
+    max-width: 400px;
+  }
+}
+
+/* Patreon Button */
+
+.patreon-widget {
+  position: fixed !important;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  opacity: 0.85;
+  animation: fade-in 1s ease-in;
+}
+
+@keyframes fade-in {
+  0% { opacity: 0 }
+  100% { opacity: 0.85 }
+}

@@ -1,58 +1,108 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Contact page">
-
-    <title>derekenos</title>
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-19335494-1"></script>
     <script>
-     window.dataLayer = window.dataLayer || [];
-     function gtag(){dataLayer.push(arguments);}
-     gtag('js', new Date());
-     gtag('config', 'UA-19335494-1');
+      
+      document.addEventListener("DOMContentLoaded", () => {
+        const eventSource = new EventSource("/_events");
+        eventSource.onmessage = event => {
+          const command = JSON.parse(event.data)
+      
+          // DEBUG
+          console.debug(`got command: ${command}`)
+      
+          switch(command) {
+            case "reload":
+              window.location.reload()
+            break
+            default:
+              console.error(`Unknown command: ${command}`)
+            break
+          }
+        }
+      })
+      
     </script>
-
-    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="static/shared.css">
+    </link>
+    <title>
+      Derek Enos | Contact
+    </title>
   </head>
-
-  <body class="contact">
-
+  <body>
     <nav>
       <ol>
-        <li><a href="/">projects</a></li>
-        <li><a href="/ambitions">ambitions</a></li>
-        <li class="current">contact</li>
+        <li>
+          <a href="/">
+            projects
+          </a>
+        </li>
+        <li>
+          <a href="/ambitions">
+            ambitions
+          </a>
+        </li>
+        <li class="current">
+          contact
+        </li>
       </ol>
     </nav>
-
-    <h1>Email</h1>
-
     <div class="content">
-      <div class="item wide">
-        <a href="mailto:derek@derekenos.com">derek@derekenos.com</a>
-        <br><br>
-        <em>If I don't respond, please try again or through another channel; AWS SES has got some issues.</em>
+      <div class="section">
+        <h1>
+          Email
+        </h1>
+        <a href="mailto:derek@derekenos.com">
+          derek@derekenos.com
+        </a>
+        <br>
+        <br>
+        <div>
+          <em>
+            If I don't respond, please try again or through another channel; AWS SES has got some issues.
+          </em>
+        </div>
+      </div>
+      <div class="section">
+        <h1>
+          Other channels
+        </h1>
+        <ol>
+          <li>
+            <a href="https://github.com/derekenos">
+              Github
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/derekjenos/">
+              Instagram
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/derekenos">
+              YouTube
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/derekenos">
+              LinkedIn
+            </a>
+          </li>
+          <li>
+            <a href="https://www.patreon.com/derekenos">
+              Patreon
+            </a>
+          </li>
+        </ol>
       </div>
     </div>
-
-    <h1>Other channels</h1>
-    <div class="content">
-      <div class="item">
-        <ul>
-        <li><a href="https://github.com/derekenos">Github</a></li>
-        <li><a href="https://www.instagram.com/derekjenos/">Instagram</a></li>
-        <li><a href="https://www.youtube.com/derekenos">YouTube</a></li>
-        <li><a href="https://www.linkedin.com/in/derekenos">LinkedIn</a></li>
-        <li><a href="https://www.patreon.com/derekenos">Patreon</a></li>
-        </ul>
-      </div>
+    <div class="footer">
+      Generated on 2021-01-13 by 
+      <a href="https://github.com/derekenos/derekenos.com-generator">
+        derekenos.com-generator
+      </a>
     </div>
-
   </body>
 </html>

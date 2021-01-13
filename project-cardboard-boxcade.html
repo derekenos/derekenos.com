@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+      
+      document.addEventListener("DOMContentLoaded", () => {
+        const eventSource = new EventSource("/_events");
+        eventSource.onmessage = event => {
+          const command = JSON.parse(event.data)
+      
+          // DEBUG
+          console.debug(`got command: ${command}`)
+      
+          switch(command) {
+            case "reload":
+              window.location.reload()
+            break
+            default:
+              console.error(`Unknown command: ${command}`)
+            break
+          }
+        }
+      })
+      
+    </script>
+    <link rel="stylesheet" href="static/shared.css">
+    </link>
+    <title>
+      Derek Enos | Cardboard Boxcade
+    </title>
+  </head>
+  <body>
+    <nav>
+      <ol>
+        <li>
+          <a href="/">
+            projects
+          </a>
+        </li>
+        <li>
+          <a href="/ambitions">
+            ambitions
+          </a>
+        </li>
+        <li>
+          <a href="/contact">
+            contact
+          </a>
+        </li>
+      </ol>
+      <div id="project-nav-outer">
+        <div id="project-nav-inner">
+          <span class="project-nav-link current">
+            Cardboard Boxcade
+          </span>
+          <a class="project-nav-link" href="project-trtl.html">
+            Trtl
+          </a>
+          <a class="project-nav-link" href="project-weezel.html">
+            Weezel
+          </a>
+          <a class="project-nav-link" href="project-modular-arcade-cabinet.html">
+            Modular Arcade Cabinet
+          </a>
+          <a class="project-nav-link" href="project-gritty-viddy.html">
+            Gritty Viddy
+          </a>
+          <a class="project-nav-link" href="project-important-message.html">
+            Important Message
+          </a>
+          <a class="project-nav-link" href="project-sketchy.html">
+            Sketchy
+          </a>
+          <a class="project-nav-link" href="project-babygate.html">
+            Babygate
+          </a>
+          <a class="project-nav-link" href="project-iome.html">
+            iome
+          </a>
+          <a class="project-nav-link" href="project-laser-cut-keypad.html">
+            Laser-cut Keypad
+          </a>
+          <a class="project-nav-link" href="project-physical-platformer-game-prototype.html">
+            Physical Platformer Game Prototype
+          </a>
+          <a class="project-nav-link" href="project-delta-robot.html">
+            Delta Robot
+          </a>
+          <a class="project-nav-link" href="project-composer.html">
+            Composer
+          </a>
+          <a class="project-nav-link" href="project-ion-model.html">
+            Ion Model
+          </a>
+          <a class="project-nav-link" href="project-demidulator.html">
+            deMIDulator
+          </a>
+          <a class="project-nav-link" href="project-beginner-s-box.html">
+            Beginner's Box
+          </a>
+          <a class="project-nav-link" href="project-video-feedback-instrument.html">
+            Video Feedback Instrument
+          </a>
+          <a class="project-nav-link" href="project-physical-interface-prototype.html">
+            Physical Interface Prototype
+          </a>
+        </div>
+      </div>
+    </nav>
+    <div class="content">
+      <div class="section">
+        <h1>
+          Cardboard Boxcade
+        </h1>
+        <h2>
+          Custom physical controls for browser-based HTML/Javascript applications.
+        </h2>
+        <picture>
+          <picture srcset="static/cardboard_boxcade_thumb.webp">
+          </picture>
+          <img src="static/cardboard_boxcade_thumb.png" alt="photo of a cardboard box with a screen and switches">
+        </picture>
+      </div>
+      <div class="section">
+        <h1>
+          Description
+        </h1>
+        <p>
+          This project explores ...
+        </p>
+      </div>
+      <div class="section">
+        <h1>
+          Design Files
+        </h1>
+        <a href="https://github.com/derekenos">
+          Github
+        </a>
+      </div>
+      <div class="section">
+        <h1>
+          Collateral Creations
+        </h1>
+        <ol>
+          <li>
+            <a href="#">
+              Prototyping Platform
+            </a>
+          </li>
+        </ol>
+      </div>
+      <div class="section">
+        <h1>
+          Related Projects
+        </h1>
+        <ol>
+          <li>
+            <a href="#">
+              iome
+            </a>
+          </li>
+        </ol>
+      </div>
+    </div>
+    <div class="footer">
+      Generated on 2021-01-13 by 
+      <a href="https://github.com/derekenos/derekenos.com-generator">
+        derekenos.com-generator
+      </a>
+    </div>
+  </body>
+</html>

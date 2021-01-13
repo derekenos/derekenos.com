@@ -1,248 +1,421 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Home page">
-
-    <title>derekenos</title>
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-19335494-1"></script>
     <script>
-     window.dataLayer = window.dataLayer || [];
-     function gtag(){dataLayer.push(arguments);}
-     gtag('js', new Date());
-     gtag('config', 'UA-19335494-1');
+      
+      document.addEventListener("DOMContentLoaded", () => {
+        const eventSource = new EventSource("/_events");
+        eventSource.onmessage = event => {
+          const command = JSON.parse(event.data)
+      
+          // DEBUG
+          console.debug(`got command: ${command}`)
+      
+          switch(command) {
+            case "reload":
+              window.location.reload()
+            break
+            default:
+              console.error(`Unknown command: ${command}`)
+            break
+          }
+        }
+      })
+      
     </script>
-
-    <link href="style.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="static/shared.css">
+    </link>
+    <title>
+      Derek Enos | Projects
+    </title>
   </head>
-
   <body>
-
     <nav>
       <ol>
-        <li class="current">projects</li>
-        <li><a href="/ambitions">ambitions</a></li>
-        <li><a href="/contact">contact</a></li>
+        <li class="current">
+          projects
+        </li>
+        <li>
+          <a href="/ambitions">
+            ambitions
+          </a>
+        </li>
+        <li>
+          <a href="/contact">
+            contact
+          </a>
+        </li>
       </ol>
     </nav>
-
     <div class="content">
-
-      <div class="item">
-        <h1>Cardboard Boxcade</h1>
-        <h2>Custom physical controls for browser-based HTML/Javascript applications.</h2>
-        <h3>#esp32 #micropython #iot #videogame</h3>
-        <a href="https://photos.app.goo.gl/rdZx6bYMPJ1KLtBg9">
-          <picture>
-            <source srcset="images/cardboard_boxcade_thumb.webp">
-            <img src="images/cardboard_boxcade_thumb.png" alt="photo of a cardboard box with a screen and switches">
-          </picture>
-        </a>
+      <div class="collection">
+        <div class="item">
+          <h1>
+            <a href="project-cardboard-boxcade.html">
+              Cardboard Boxcade
+            </a>
+          </h1>
+          <h2>
+            Custom physical controls for browser-based HTML/Javascript applications.
+          </h2>
+          <h3>
+            #esp32 #micropython #iot #videogame
+          </h3>
+          <a href="project-cardboard-boxcade.html">
+            <picture>
+              <picture srcset="static/cardboard_boxcade_thumb.webp">
+              </picture>
+              <img src="static/cardboard_boxcade_thumb.png" alt="photo of a cardboard box with a screen and switches">
+            </picture>
+          </a>
+        </div>
+        <div class="item">
+          <h1>
+            <a href="project-trtl.html">
+              Trtl
+            </a>
+          </h1>
+          <h2>
+            A wheeled drawing robot inspired by the Logo Turtle.
+          </h2>
+          <h3>
+            #cnc #art #esp32 #micropython #iot
+          </h3>
+          <a href="project-trtl.html">
+            <picture>
+              <picture srcset="static/trtl_thumb.webp">
+              </picture>
+              <img src="static/trtl_thumb.png" alt="photo of the T.r.t.l. drawing robot">
+            </picture>
+          </a>
+        </div>
+        <div class="item">
+          <h1>
+            <a href="project-weezel.html">
+              Weezel
+            </a>
+          </h1>
+          <h2>
+            A drawing robot accessory for the Ikea MÅLA easel.
+          </h2>
+          <h3>
+            #cnc #art #esp32 #micropython #iot
+          </h3>
+          <a href="project-weezel.html">
+            <picture>
+              <picture srcset="static/weezel_thumb.webp">
+              </picture>
+              <img src="static/weezel_thumb.png" alt="photo of the Weezel drawing robot">
+            </picture>
+          </a>
+        </div>
+        <div class="item">
+          <h1>
+            <a href="project-modular-arcade-cabinet.html">
+              Modular Arcade Cabinet
+            </a>
+          </h1>
+          <h2>
+            A work in progress...
+          </h2>
+          <h3>
+          </h3>
+          <a href="project-modular-arcade-cabinet.html">
+            <picture>
+              <picture srcset="static/arcade_cabinet_thumb.webp">
+              </picture>
+              <img src="static/arcade_cabinet_thumb.png" alt="lasercut arcade cabinet scale model photo">
+            </picture>
+          </a>
+        </div>
+        <div class="item">
+          <h1>
+            <a href="project-gritty-viddy.html">
+              Gritty Viddy
+            </a>
+          </h1>
+          <h2>
+            Real-timeish, GPU-backed video effects using vanilla Javascript.
+          </h2>
+          <h3>
+            #javascript #gpu #video #effects #realtime
+          </h3>
+          <a href="project-gritty-viddy.html">
+            <picture>
+              <picture srcset="static/gritty-viddy.webp">
+              </picture>
+              <img src="static/gritty-viddy.png" alt="gritty viddy video effects app screenshot">
+            </picture>
+          </a>
+        </div>
+        <div class="item">
+          <h1>
+            <a href="project-important-message.html">
+              Important Message
+            </a>
+          </h1>
+          <h2>
+            Testing the waters of the Cloudflare Apps platform.
+          </h2>
+          <h3>
+            #javascript #webcomponents #webapp
+          </h3>
+          <a href="project-important-message.html">
+            <picture>
+              <picture srcset="static/important-message.webp">
+              </picture>
+              <img src="static/important-message.png" alt="Important Message app banner image">
+            </picture>
+          </a>
+        </div>
+        <div class="item">
+          <h1>
+            <a href="project-sketchy.html">
+              Sketchy
+            </a>
+          </h1>
+          <h2>
+            Internet-connected Motorized Etch-A-Sketch
+          </h2>
+          <h3>
+            #esp32 #micropython #iot
+          </h3>
+          <a href="project-sketchy.html">
+            <picture>
+              <picture srcset="static/sketchy_video_poster.webp">
+              </picture>
+              <img src="static/sketchy_video_poster.png" alt="photo of motorized Etch-A-Sketch">
+            </picture>
+          </a>
+        </div>
+        <div class="item">
+          <h1>
+            <a href="project-babygate.html">
+              Babygate
+            </a>
+          </h1>
+          <h2>
+            A vanilla JS / HTML5 demo game for the iome platform.
+          </h2>
+          <h3>
+            #html5 #javascript #webaudio #videogame
+          </h3>
+          <a href="project-babygate.html">
+            <picture>
+              <picture srcset="static/babygate_thumb.webp">
+              </picture>
+              <img src="static/babygate_thumb.png" alt="screenshot of Babygate video game">
+            </picture>
+          </a>
+        </div>
+        <div class="item">
+          <h1>
+            <a href="project-iome.html">
+              iome
+            </a>
+          </h1>
+          <h2>
+            A platform for developing physical interfaces with a web application frontend using modern, off-the-shelf technologies.
+          </h2>
+          <h3>
+            #esp32 #micropython #iot
+          </h3>
+          <a href="project-iome.html">
+            <picture>
+              <picture srcset="static/game_console_20191008_thumb.webp">
+              </picture>
+              <img src="static/game_console_20191008_thumb.png" alt="lasercut iome dev kit photo">
+            </picture>
+          </a>
+        </div>
+        <div class="item">
+          <h1>
+            <a href="project-laser-cut-keypad.html">
+              Laser-cut Keypad
+            </a>
+          </h1>
+          <h2>
+            A Internet-connected Keypad w/ Backlit, Lasercut Living Hinge Buttons.
+          </h2>
+          <h3>
+            #esp32 #micropython #iot
+          </h3>
+          <a href="project-laser-cut-keypad.html">
+            <picture>
+              <picture srcset="static/lasercut_keypad_thumb.webp">
+              </picture>
+              <img src="static/lasercut_keypad_thumb.png" alt="photo of laser-cut wooden keypad">
+            </picture>
+          </a>
+        </div>
+        <div class="item">
+          <h1>
+            <a href="project-physical-platformer-game-prototype.html">
+              Physical Platformer Game Prototype
+            </a>
+          </h1>
+          <h2>
+          </h2>
+          <h3>
+            #esp32 #micropython #iot
+          </h3>
+          <a href="project-physical-platformer-game-prototype.html">
+            <picture>
+              <picture srcset="static/platformer_thumb.webp">
+              </picture>
+              <img src="static/platformer_thumb.png" alt="photo of motorized x/y axis made from laser-cut wood">
+            </picture>
+          </a>
+        </div>
+        <div class="item">
+          <h1>
+            <a href="project-delta-robot.html">
+              Delta Robot
+            </a>
+          </h1>
+          <h2>
+            A gratuitously lasercut delta robot.
+          </h2>
+          <h3>
+            #esp32 #micropython #iot
+          </h3>
+          <a href="project-delta-robot.html">
+            <picture>
+              <picture srcset="static/delta_video_thumb.webp">
+              </picture>
+              <img src="static/delta_video_thumb.png" alt="photo of delta robot made from laser-cut wood">
+            </picture>
+          </a>
+        </div>
+        <div class="item">
+          <h1>
+            <a href="project-composer.html">
+              Composer
+            </a>
+          </h1>
+          <h2>
+            A simple sound toy using the Web Audio API.
+          </h2>
+          <h3>
+            #javascript #webaudio #audio
+          </h3>
+          <a href="project-composer.html">
+            <picture>
+              <picture srcset="static/composer.webp">
+              </picture>
+              <img src="static/composer.png" alt="sound composer web app screenshot">
+            </picture>
+          </a>
+        </div>
+        <div class="item">
+          <h1>
+            <a href="project-ion-model.html">
+              Ion Model
+            </a>
+          </h1>
+          <h2>
+            A computationally inefficient exploration of the complex behaviors that arise from the interaction of simple rules.
+          </h2>
+          <h3>
+            #javascript #emergentbehavior
+          </h3>
+          <a href="project-ion-model.html">
+            <picture>
+              <picture srcset="static/ionModelScreenThumb.webp">
+              </picture>
+              <img src="static/ionModelScreenThumb.png" alt="ion model application screenshot">
+            </picture>
+          </a>
+        </div>
+        <div class="item">
+          <h1>
+            <a href="project-demidulator.html">
+              deMIDulator
+            </a>
+          </h1>
+          <h2>
+            A lo-fi, MIDI-controlled synthesizer and sampler.
+          </h2>
+          <h3>
+            #picmicrocontroller #assembly #midi #synthesizer #sampler #rockband
+          </h3>
+          <a href="project-demidulator.html">
+            <picture>
+              <picture srcset="static/demidulator_thumb.webp">
+              </picture>
+              <img src="static/demidulator_thumb.png" alt="photo of the deMIDulator 8-bit synth">
+            </picture>
+          </a>
+        </div>
+        <div class="item">
+          <h1>
+            <a href="project-beginner-s-box.html">
+              Beginner's Box
+            </a>
+          </h1>
+          <h2>
+            Force-sensitive tone generators.
+          </h2>
+          <h3>
+            #microcontroller #sound
+          </h3>
+          <a href="project-beginner-s-box.html">
+            <picture>
+              <picture srcset="static/beginners_box_thumb.webp">
+              </picture>
+              <img src="static/beginners_box_thumb.png" alt="photo of laser-cut force-sensitive tone generator boxes">
+            </picture>
+          </a>
+        </div>
+        <div class="item">
+          <h1>
+            <a href="project-video-feedback-instrument.html">
+              Video Feedback Instrument
+            </a>
+          </h1>
+          <h2>
+            NTSC video generation w/ light pen feedback
+          </h2>
+          <h3>
+            #microcontroller #videoart
+          </h3>
+          <a href="project-video-feedback-instrument.html">
+            <picture>
+              <picture srcset="static/video_feedback_thumb.webp">
+              </picture>
+              <img src="static/video_feedback_thumb.png" alt="video screenshot of video feedback instrument">
+            </picture>
+          </a>
+        </div>
+        <div class="item">
+          <h1>
+            <a href="project-physical-interface-prototype.html">
+              Physical Interface Prototype
+            </a>
+          </h1>
+          <h2>
+            An input device that reads the insertion depth of a movable column.
+          </h2>
+          <h3>
+            #microcontroller #hci
+          </h3>
+          <a href="project-physical-interface-prototype.html">
+            <picture>
+              <picture srcset="static/physical_interface_thumb.webp">
+              </picture>
+              <img src="static/physical_interface_thumb.png" alt="photo of laser-cut physical interface prototype">
+            </picture>
+          </a>
+        </div>
       </div>
-
-      <div class="item">
-        <h1>Trtl</h1>
-        <h2>A wheeled drawing robot inspired by the Logo Turtle.</h2>
-        <h3>#cnc #art #esp32 #micropython #iot</h3>
-        <a href="images/trtl.jpg">
-          <picture>
-            <source srcset="images/trtl_thumb.webp">
-            <img src="images/trtl_thumb.jpg" alt="photo of the T.r.t.l. drawing robot">
-          </picture>
-        </a>
-      </div>
-
-      <div class="item">
-        <h1>Weezel</h1>
-        <h2>A drawing robot accessory for the Ikea MÅLA easel.</h2>
-        <h3>#cnc #art #esp32 #micropython #iot</h3>
-        <a href="https://photos.app.goo.gl/4Nu9vLZbMouLfBRD7">
-          <picture>
-            <source srcset="images/weezel_thumb.webp">
-            <img src="images/weezel_thumb.jpg" alt="photo of the Weezel drawing robot">
-          </picture>
-        </a>
-      </div>
-
-      <div class="item">
-        <h1>Modular Arcade Cabinet</h1>
-        <h2>A work in progress...</h2>
-        <a href="images/arcade_cabinet.jpg">
-          <picture>
-            <source srcset="images/arcade_cabinet_thumb.webp">
-            <img src="images/arcade_cabinet_thumb.jpg" alt="lasercut arcade cabinet scale model photo">
-          </picture>
-        </a>
-      </div>
-
-      <div class="item">
-        <h1>Gritty Viddy</h1>
-        <h2>
-          Real-timeish, GPU-backed video effects using vanilla Javascript.
-          [ <a href="https://github.com/derekenos/gritty-viddy">github</a> ]
-        </h2>
-        <h3>#javascript #gpu #video #effects #realtime</h3>
-        <a href="projects/gritty-viddy/index.html">
-          <picture>
-            <source srcset="images/gritty-viddy.webp">
-            <img src="images/gritty-viddy.png" alt="gritty viddy video effects app screenshot">
-          </picture>
-        </a>
-      </div>
-
-      <div class="item">
-        <h1>Important Message</h1>
-        <h2>Testing the waters of the Cloudflare Apps platform.</h2>
-        <h3>#javascript #webcomponents #webapp</h3>
-        <a href="https://www.cloudflare.com/apps/important-message">
-          <picture>
-            <source srcset="images/important-message.webp">
-            <img src="images/important-message.png" alt="Important Message app banner image">
-          </picture>
-        </a>
-      </div>
-
-      <div class="item">
-        <h1>Sketchy</h1>
-        <h2>
-          Internet-connected Motorized Etch-A-Sketch
-          [ <a href="https://github.com/derekenos/iome/tree/master/appliances/sketchy">github</a> ]
-        </h2>
-        <h3>#esp32 #micropython #iot</h3>
-
-        <video
-          controls
-          poster="images/sketchy_video_poster.png"
-          preload="metadata"
-          src="video/sketchy_20191120.mp4"
-          type="video/mp4"
-          width="560"
-        >
-        </video>
-      </div>
-
-      <div class="item">
-        <h1>Babygate</h1>
-        <h2>
-          A vanilla JS / HTML5 demo game for the iome platform.
-        </h2>
-        <h3>#html5 #javascript #webaudio #videogame</h3>
-
-        <a href="https://youtu.be/Y_KrPvnUPak?t=11">
-          <picture>
-            <source srcset="images/babygate_thumb.webp">
-            <img src="images/babygate_thumb.png" alt="screenshot of Babygate video game">
-          </picture>
-        </a>
-      </div>
-
-      <div class="item">
-        <h1>iome</h1>
-        <h2>
-          A platform for developing physical interfaces with a web application frontend using modern, off-the-shelf technologies. [ <a href="https://github.com/derekenos/iome/tree/master/dev_kits/v1">github</a> ]
-        </h2>
-        <h3>#esp32 #micropython #iot</h3>
-
-        <a href="images/game_console_20191008.png">
-          <picture>
-            <source srcset="images/game_console_20191008_thumb.webp">
-            <img src="images/game_console_20191008_thumb.png" width="560" alt="lasercut iome dev kit photo">
-          </picture>
-        </a>
-      </div>
-
-      <div class="item">
-        <h1>Lasercut Keypad</h1>
-        <h2>A Internet-connected Keypad w/ Backlit, Lasercut Living Hinge Buttons [ <a href="https://github.com/derekenos/keypad">github</a> ]
-        </h2>
-        <h3>#esp32 #micropython #iot</h3>
-
-        <iframe title="Lasercut keypad video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/lH6zoLE9jAc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-
-      <div class="item">
-        <h1>Physical Platformer Game Prototype</h1>
-        <h2>&nbsp;</h2>
-        <h3>#esp32 #micropython #iot</h3>
-
-        <iframe title="Physical platformer robot video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/9ZBN3aL_EXQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-
-      <div class="item">
-        <h1>Delta Robot</h1>
-        <h2>Gratuitously lasercut delta robot. [ <a href="https://github.com/derekenos/delta_robot">github</a> ]
-        </h2>
-        <h3>#esp32 #micropython #iot</h3>
-
-        <iframe title="Delta robot video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/nWZBIIaNq_A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-
-      <div class="item">
-        <h1>Composer</h1>
-        <h2>A simple sound toy using the Web Audio API.</h2>
-        <h3>#javascript #webaudio #audio</h3>
-
-        <a href="projects/composer/">
-          <picture>
-            <source srcset="images/composer.webp">
-            <img src="images/composer.png" alt="sound composer web app screenshot">
-          </picture>
-        </a>
-      </div>
-
-      <div class="item">
-        <h1>Ion Model</h1>
-        <h2>A computationally inefficient exploration of the complex behaviors that arise from the interaction of simple rules.</h2>
-        <h3>#javascript #emergentbehavior</h3>
-
-        <a href="projects/sim/">
-          <picture>
-            <source srcset="images/ionModelScreenThumb.webp">
-            <img src="images/ionModelScreenThumb.gif" alt="ion model application screenshot">
-          </picture>
-        </a>
-      </div>
-
-      <div class="item">
-        <h1>deMIDulator</h1>
-        <h2>A lo-fi, MIDI-controlled synthesizer and sampler. [ <a href="http://badhandshake.com/demidulator/index.html"> product page</a>, <a href="https://www.kickstarter.com/projects/derekenos/demidulator-8-bit-midi-synthesizer-and-lo-fi-audio">Kickstarter</a>, <a href="https://github.com/derekenos/the_deMIDulator">github</a> ] </h2>
-        <h3>#picmicrocontroller #assembly #midi #synthesizer #sampler #rockband</h3>
-
-        <iframe title="deMIDulator video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/Cs0cHDeZuek" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-
-      <div class="item">
-        <h1>Beginner's Box</h1>
-        <h2>Force-sensitive tone generators</h2>
-        <h3>#microcontroller #sound</h3>
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/XVhE9NMMOuc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-
-      <div class="item">
-        <h1>Video Feedback Instrument</h1>
-        <h2>NTSC video generation w/ light pen feedback</h2>
-        <h3>#microcontroller #videoart</h3>
-
-        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/X56rtDdNuws" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-      </div>
-
-      <div class="item">
-        <h1>Physical Interface Prototype</h1>
-        <h2>An input device that reads the insertion depth of a movable column</h2>
-        <h3>#microcontroller #hci</h3>
-
-      <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/SN0wwrFrdoU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-      </div>
-
+    </div>
+    <div class="footer">
+      Generated on 2021-01-13 by 
+      <a href="https://github.com/derekenos/derekenos.com-generator">
+        derekenos.com-generator
+      </a>
     </div>
   </body>
-
 </html>

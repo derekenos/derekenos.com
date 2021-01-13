@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <script>
+      
+      document.addEventListener("DOMContentLoaded", () => {
+        const eventSource = new EventSource("/_events");
+        eventSource.onmessage = event => {
+          const command = JSON.parse(event.data)
+      
+          // DEBUG
+          console.debug(`got command: ${command}`)
+      
+          switch(command) {
+            case "reload":
+              window.location.reload()
+            break
+            default:
+              console.error(`Unknown command: ${command}`)
+            break
+          }
+        }
+      })
+      
+    </script>
+    <link rel="stylesheet" href="static/shared.css">
+    </link>
+  </head>
+  <body>
+    <nav>
+      <ol>
+        <li>
+          <a href="/">
+            projects
+          </a>
+        </li>
+        <li>
+          <a href="/contact">
+            contact
+          </a>
+        </li>
+      </ol>
+      <div id="project-nav-outer">
+        <div id="project-nav-inner">
+          <span class="project-nav-link current">
+            Project 3
+          </span>
+          <a class="project-nav-link" href="project-project-1.html">
+            Project 1
+          </a>
+          <a class="project-nav-link" href="project-project-2.html">
+            Project 2
+          </a>
+        </div>
+      </div>
+    </nav>
+    <h1>
+      Project 3
+    </h1>
+    <picture>
+      <picture srcset="static/physical_interface_thumb.webp">
+      </picture>
+      <img src="static/physical_interface_thumb.png" alt="photo of third project">
+    </picture>
+    <h2>
+      The third project.
+    </h2>
+    <h1>
+      Description
+    </h1>
+    <p>
+      This was a great third project.
+    </p>
+  </body>
+</html>
