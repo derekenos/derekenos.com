@@ -3,26 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-19335494-1">
+    </script>
     <script>
       
-      document.addEventListener("DOMContentLoaded", () => {
-        const eventSource = new EventSource("/_events");
-        eventSource.onmessage = event => {
-          const command = JSON.parse(event.data)
-      
-          // DEBUG
-          console.debug(`got command: ${command}`)
-      
-          switch(command) {
-            case "reload":
-              window.location.reload()
-            break
-            default:
-              console.error(`Unknown command: ${command}`)
-            break
-          }
-        }
-      })
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'UA-19335494-1');
       
     </script>
     <link rel="stylesheet" href="static/shared.css">
