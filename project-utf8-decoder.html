@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="https://github.com/derekenos/derekenos.com-generator">
+    <link rel="stylesheet" href="static/shared.css">
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-19335494-1">
     </script>
     <script>
@@ -16,7 +17,6 @@
       gtag('config', 'UA-19335494-1');
       
     </script>
-    <link rel="stylesheet" href="static/shared.css">
     <title>
       Derek Enos | UTF-8 Decoder
     </title>
@@ -122,17 +122,18 @@
         </div>
       </div>
     </nav>
-    <div class="content project">
+    <div class="content project" itemscope="" itemtype="https://schema.org/CreativeWork">
       <h1>
         UTF-8 Decoder Project Details
       </h1>
       <section>
-        <h2>
+        <h2 itemprop="name">
           UTF-8 Decoder
         </h2>
-        <h3>
+        <h3 itemprop="abstract">
           A toy incremental UTF-8 decoder.
         </h3>
+        <meta itemprop="image" content="static/utf8_decoder_thumb.png">
         <picture>
           <source srcset="static/utf8_decoder_thumb.webp">
           <img src="static/utf8_decoder_thumb.png" alt="screenshot of UTF-8 decoder library source code">
@@ -148,19 +149,21 @@
       </section>
       <section>
         <h2>
-          Related Projects
+          Dependent Projects
         </h2>
         <ol class="links">
-          <li>
-            <a href="/project-weather-station">
-              Weather Station
+          <li itemprop="isPartOf" itemscope="" itemtype="https://schema.org/CreativeWork">
+            <a itemprop="url" href="/project-weather-station">
+              <span itemprop="name">
+                Weather Station
+              </span>
             </a>
           </li>
         </ol>
       </section>
     </div>
     <div class="footer">
-      Generated on 2021-01-18 by 
+      Generated on 2021-01-19 by 
       <a href="https://github.com/derekenos/derekenos.com-generator">
         derekenos.com-generator
       </a>
