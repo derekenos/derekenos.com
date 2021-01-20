@@ -1,0 +1,58 @@
+
+body {
+  font-family: arial;
+  font-size: 1rem;
+  background-color: #ffffff;
+  color: #000000;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0;
+  height: 100%;
+}
+
+input {
+  text-align: center;
+}
+
+#mainCanvas {
+  cursor: crosshair;
+  border: 1px solid #888888;
+}
+
+#buttonContainer {
+  display: none;
+  border: solid #000000 1px;
+  white-space: nowrap;
+  margin: 0 1rem;
+  padding: 1rem;
+}
+
+#infoContainer {
+  display: none;
+}
+
+.nodeLabel {
+  width: auto;
+  height: auto;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  font-size: smaller;
+  color: #ff8888;
+  padding-left: 8px;
+}
+
+.button {
+  width: auto;
+  padding: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    flex-flow: column;
+  }
+}
