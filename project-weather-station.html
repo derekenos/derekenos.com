@@ -133,9 +133,14 @@
         <h3 itemprop="abstract">
           An IOT weather forecast display appliance.
         </h3>
-        <meta itemprop="image" content="static/weather_station_thumb.png">
-        <picture>
-          <source srcset="static/weather_station_thumb.webp">
+        <picture itemprop="subjectOf" itemscope="" itemtype="https://schema.org/ImageObject">
+          <meta itemprop="contentUrl" content="static/weather_station_thumb.png">
+          <meta itemprop="thumbnailUrl" content="static/weather_station_thumb.png">
+          <meta itemprop="name" content="Weather Station">
+          <meta itemprop="description" content="photo of a laser-cut wood weather station">
+          <meta itemprop="encodingFormat" content="image/png">
+          <meta itemprop="uploadDate" content="2021-01-18T07:53:51.542181">
+          <source srcset="static/weather_station_thumb.webp" type="image/png">
           <img src="static/weather_station_thumb.png" alt="photo of a laser-cut wood weather station">
         </picture>
       </section>
@@ -146,20 +151,6 @@
         <p itemprop="description">
           This project uses laser-cut, servo-powered gauges to display the current local weather forecast.
         </p>
-      </section>
-      <section>
-        <h2>
-          Additional Media
-        </h2>
-        <ol class="links">
-          <li itemprop="associatedMedia" itemscope="" itemtype="https://schema.org/MediaObject">
-            <a itemprop="url" href="https://photos.app.goo.gl/n43fajMjPJhvcqR47">
-              <span itemprop="name">
-                Google Photos Album
-              </span>
-            </a>
-          </li>
-        </ol>
       </section>
       <section>
         <h2>
@@ -196,9 +187,37 @@
           </li>
         </ol>
       </section>
+      <section>
+        <h2>
+          Videos
+        </h2>
+        <video itemprop="subjectOf" itemscope="" itemtype="https://schema.org/VideoObject" controls="">
+          <meta itemprop="contentUrl" content="https://derekenos-com.nyc3.cdn.digitaloceanspaces.com/weather_station.mp4">
+          <meta itemprop="thumbnailUrl" content="static/weather_station_mp4_thumb.png">
+          <meta itemprop="name" content="Weather Station Introduction">
+          <meta itemprop="description" content="The weather station powering up, spinning the busy indicator, and displaying the forecast.">
+          <meta itemprop="encodingFormat" content="video/mp4">
+          <meta itemprop="uploadDate" content="2021-01-20T14:25:31.475735">
+          <source src="https://derekenos-com.nyc3.cdn.digitaloceanspaces.com/weather_station.mp4" poster="static/weather_station_mp4_thumb.png" type="video/mp4">
+        </video>
+      </section>
+      <section>
+        <h2>
+          Additional Media
+        </h2>
+        <ol class="links">
+          <li itemprop="associatedMedia" itemscope="" itemtype="https://schema.org/MediaObject">
+            <a itemprop="url" href="https://photos.app.goo.gl/n43fajMjPJhvcqR47">
+              <span itemprop="name">
+                Google Photos Album
+              </span>
+            </a>
+          </li>
+        </ol>
+      </section>
     </div>
     <div class="footer">
-      Generated on 2021-01-20 by 
+      Generated on 2021-01-21 by 
       <a href="https://github.com/derekenos/derekenos.com-generator">
         derekenos.com-generator
       </a>
