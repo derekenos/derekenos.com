@@ -1,5 +1,8 @@
 https://derekenos.com/contact.html
 https://derekenos.com/ambitions.html
+https://derekenos.com//project-derekenos-com-generator.html
+https://derekenos.com//project-htmlephant.html
+https://derekenos.com//project-femtoweb.html
 https://derekenos.com//project-weather-station.html
 https://derekenos.com//project-indicator-gauge.html
 https://derekenos.com//project-streaming-json-parser.html
