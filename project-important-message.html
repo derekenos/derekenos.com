@@ -131,10 +131,12 @@
         </div>
       </div>
     </nav>
-    <div class="content project" itemscope="" itemtype="https://schema.org/CreativeWork">
+    <div class="content project" itemscope="" itemtype="https://schema.org/SoftwareApplication">
       <h1>
         Important Message Project Details
       </h1>
+      <meta itemprop="applicationCategory" content="UI & Design">
+      <meta itemprop="operatingSystem" content="Web Browser">
       <section>
         <h2 itemprop="name">
           Important Message
@@ -165,15 +167,19 @@
       </section>
       <section>
         <h2>
-          Try It Out
+          External Links
         </h2>
-        <a href="https://www.cloudflare.com/apps/important-message">
-          Launch this application
-        </a>
+        <ol class="links">
+          <li>
+            <a itemprop="installUrl" href="https://www.cloudflare.com/apps/important-message">
+              Important Message on Cloudflare Apps
+            </a>
+          </li>
+        </ol>
       </section>
     </div>
     <div class="footer">
-      Generated on 2021-01-24 by 
+      Generated on 2021-01-26 by 
       <a href="https://github.com/derekenos/derekenos.com-generator">
         derekenos.com-generator
       </a>
