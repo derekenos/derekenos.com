@@ -1,5 +1,5 @@
 https://derekenos.com/contact.html
-https://derekenos.com/project_generators.html
+https://derekenos.com/projects.html
 https://derekenos.com/project-derekenos-com-generator.html
 https://derekenos.com/project-htmlephant.html
 https://derekenos.com/project-femtoweb.html
@@ -27,7 +27,7 @@ https://derekenos.com/project-beginner-s-box.html
 https://derekenos.com/project-video-feedback-instrument.html
 https://derekenos.com/project-physical-interface-prototype.html
 https://derekenos.com/ambitions.html
-https://derekenos.com/tag_generators.html
+https://derekenos.com/tags.html
 https://derekenos.com/tag-8bit.html
 https://derekenos.com/tag-app.html
 https://derekenos.com/tag-art.html
