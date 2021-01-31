@@ -30,200 +30,254 @@
     <meta property="og:url" content="https://derekenos.com/project-weezel">
   </head>
   <body>
-    <nav>
-      <ol>
-        <li>
-          <a href="/">
-            home
-          </a>
-        </li>
-        <li class="current">
-          projects
-        </li>
-        <li>
-          <a href="/ambitions">
-            ambitions
-          </a>
-        </li>
-        <li>
-          <a href="/tags">
-            tags
-          </a>
-        </li>
-        <li>
-          <a href="/contact">
-            contact
-          </a>
-        </li>
-      </ol>
-      <div id="sub-nav-outer">
-        <div id="sub-nav-inner">
-          <span>
-            Weezel
-          </span>
-          <a href="/project-derekenos-com-generator">
-            Static Site Generator
-          </a>
-          <a href="/project-htmlephant">
-            HTMLephant
-          </a>
-          <a href="/project-femtoweb">
-            femtoweb
-          </a>
-          <a href="/project-weather-station">
-            Weather Station
-          </a>
-          <a href="/project-indicator-gauge">
-            Indicator Gauge
-          </a>
-          <a href="/project-streaming-json-parser">
-            Streaming JSON Parser
-          </a>
-          <a href="/project-strptime">
-            time.strptime()
-          </a>
-          <a href="/project-utf8-decoder">
-            UTF-8 Decoder
-          </a>
-          <a href="/project-cardboard-boxcade">
-            Cardboard Boxcade
-          </a>
-          <a href="/project-trtl">
-            Trtl
-          </a>
-          <a href="/project-modular-arcade-cabinet">
-            Modular Arcade Cabinet
-          </a>
-          <a href="/project-gritty-viddy">
-            Gritty Viddy
-          </a>
-          <a href="/project-important-message">
-            Important Message
-          </a>
-          <a href="/project-sketchy">
-            Sketchy
-          </a>
-          <a href="/project-babygate">
-            Babygate
-          </a>
-          <a href="/project-iome">
-            iome
-          </a>
-          <a href="/project-laser-cut-keypad">
-            Laser-cut Keypad
-          </a>
-          <a href="/project-physical-platformer-game-prototype">
-            Physical Platformer Game Prototype
-          </a>
-          <a href="/project-delta-robot">
-            Delta Robot
-          </a>
-          <a href="/project-composer">
-            Composer
-          </a>
-          <a href="/project-ion-model">
-            Ion Model
-          </a>
-          <a href="/project-demidulator">
-            deMIDulator
-          </a>
-          <a href="/project-beginner-s-box">
-            Beginner's Box
-          </a>
-          <a href="/project-video-feedback-instrument">
-            Video Feedback Instrument
-          </a>
-          <a href="/project-physical-interface-prototype">
-            Physical Interface Prototype
-          </a>
-        </div>
-      </div>
-    </nav>
-    <div class="content project" itemscope="" itemtype="https://schema.org/CreativeWork">
-      <h1>
-        Weezel Project Details
-      </h1>
-      <section>
-        <h2 itemprop="name">
-          Weezel
-        </h2>
-        <div>
-          <a class="tag" itemprop="isPartOf" href="/tag-art">
-            #art
-          </a>
-          <a class="tag" itemprop="isPartOf" href="/tag-cnc">
-            #cnc
-          </a>
-          <a class="tag" itemprop="isPartOf" href="/tag-microcontroller">
-            #microcontroller
-          </a>
-          <a class="tag" itemprop="isPartOf" href="/tag-micropython">
-            #micropython
-          </a>
-          <a class="tag" itemprop="isPartOf" href="/tag-motor">
-            #motor
-          </a>
-          <a class="tag" itemprop="isPartOf" href="/tag-python3">
-            #python3
-          </a>
-          <a class="tag" itemprop="isPartOf" href="/tag-servo">
-            #servo
-          </a>
-          <a class="tag" itemprop="isPartOf" href="/tag-stepper">
-            #stepper
-          </a>
-          <a class="tag" itemprop="isPartOf" href="/tag-wifi">
-            #wifi
-          </a>
-        </div>
-        <h3 itemprop="abstract">
-          A drawing robot accessory for the Ikea MÅLA easel.
-        </h3>
-        <span itemprop="subjectOf" itemscope="" itemtype="https://schema.org/ImageObject">
-          <meta itemprop="contentUrl" content="static/weezel_thumb.png">
-          <meta itemprop="thumbnailUrl" content="static/weezel_thumb.png">
-          <meta itemprop="name" content="Weezel Drawing Robot">
-          <meta itemprop="description" content="photo of the Weezel drawing robot">
-          <meta itemprop="encodingFormat" content="image/png">
-          <meta itemprop="uploadDate" content="2021-01-24T12:43:27.657665">
-          <picture>
-            <source srcset="static/weezel_thumb.webp" type="image/png">
-            <img src="static/weezel_thumb.png" alt="photo of the Weezel drawing robot">
-          </picture>
-        </span>
-      </section>
-      <section>
-        <h2>
-          Uses
-        </h2>
-        <ol class="links">
-          <li itemprop="hasPart" itemscope="" itemtype="https://schema.org/CreativeWork">
-            <a itemprop="url" href="/project-femtoweb">
-              <span itemprop="name">
-                femtoweb
-              </span>
-            </a>
-          </li>
-        </ol>
-      </section>
-      <section>
-        <h2>
-          External Links
-        </h2>
-        <ol class="links">
+    <header>
+      <nav id="main-nav">
+        <ol>
           <li>
-            <a itemprop="mainEntityOfPage" href="https://photos.app.goo.gl/4Nu9vLZbMouLfBRD7">
-              Google Photos Album
+            <a href="/">
+              home
+            </a>
+          </li>
+          <li id="active-main-nav-tab">
+            projects
+          </li>
+          <li>
+            <a href="/ambitions">
+              ambitions
+            </a>
+          </li>
+          <li>
+            <a href="/tags">
+              tags
+            </a>
+          </li>
+          <li>
+            <a href="/contact">
+              contact
             </a>
           </li>
         </ol>
-      </section>
-    </div>
-    <div class="footer">
-      Generated on 2021-01-30 by 
+      </nav>
+      <nav id="sub-nav" aria-labelledby="active-main-nav-tab">
+        <ol>
+          <li>
+            Weezel
+          </li>
+          <li>
+            <a href="/project-derekenos-com-generator">
+              Static Site Generator
+            </a>
+          </li>
+          <li>
+            <a href="/project-htmlephant">
+              HTMLephant
+            </a>
+          </li>
+          <li>
+            <a href="/project-femtoweb">
+              femtoweb
+            </a>
+          </li>
+          <li>
+            <a href="/project-weather-station">
+              Weather Station
+            </a>
+          </li>
+          <li>
+            <a href="/project-indicator-gauge">
+              Indicator Gauge
+            </a>
+          </li>
+          <li>
+            <a href="/project-streaming-json-parser">
+              Streaming JSON Parser
+            </a>
+          </li>
+          <li>
+            <a href="/project-strptime">
+              time.strptime()
+            </a>
+          </li>
+          <li>
+            <a href="/project-utf8-decoder">
+              UTF-8 Decoder
+            </a>
+          </li>
+          <li>
+            <a href="/project-cardboard-boxcade">
+              Cardboard Boxcade
+            </a>
+          </li>
+          <li>
+            <a href="/project-trtl">
+              Trtl
+            </a>
+          </li>
+          <li>
+            <a href="/project-modular-arcade-cabinet">
+              Modular Arcade Cabinet
+            </a>
+          </li>
+          <li>
+            <a href="/project-gritty-viddy">
+              Gritty Viddy
+            </a>
+          </li>
+          <li>
+            <a href="/project-important-message">
+              Important Message
+            </a>
+          </li>
+          <li>
+            <a href="/project-sketchy">
+              Sketchy
+            </a>
+          </li>
+          <li>
+            <a href="/project-babygate">
+              Babygate
+            </a>
+          </li>
+          <li>
+            <a href="/project-iome">
+              iome
+            </a>
+          </li>
+          <li>
+            <a href="/project-laser-cut-keypad">
+              Laser-cut Keypad
+            </a>
+          </li>
+          <li>
+            <a href="/project-physical-platformer-game-prototype">
+              Physical Platformer Game Prototype
+            </a>
+          </li>
+          <li>
+            <a href="/project-delta-robot">
+              Delta Robot
+            </a>
+          </li>
+          <li>
+            <a href="/project-composer">
+              Composer
+            </a>
+          </li>
+          <li>
+            <a href="/project-ion-model">
+              Ion Model
+            </a>
+          </li>
+          <li>
+            <a href="/project-demidulator">
+              deMIDulator
+            </a>
+          </li>
+          <li>
+            <a href="/project-beginner-s-box">
+              Beginner's Box
+            </a>
+          </li>
+          <li>
+            <a href="/project-video-feedback-instrument">
+              Video Feedback Instrument
+            </a>
+          </li>
+          <li>
+            <a href="/project-physical-interface-prototype">
+              Physical Interface Prototype
+            </a>
+          </li>
+        </ol>
+      </nav>
+    </header>
+    <main>
+      <div class="content project" itemscope="" itemtype="https://schema.org/CreativeWork">
+        <h1>
+          Weezel Project Details
+        </h1>
+        <section>
+          <h2 itemprop="name">
+            Weezel
+          </h2>
+          <div>
+            <a class="tag" itemprop="isPartOf" href="/tag-art">
+              #art
+            </a>
+            <a class="tag" itemprop="isPartOf" href="/tag-cnc">
+              #cnc
+            </a>
+            <a class="tag" itemprop="isPartOf" href="/tag-microcontroller">
+              #microcontroller
+            </a>
+            <a class="tag" itemprop="isPartOf" href="/tag-micropython">
+              #micropython
+            </a>
+            <a class="tag" itemprop="isPartOf" href="/tag-motor">
+              #motor
+            </a>
+            <a class="tag" itemprop="isPartOf" href="/tag-python3">
+              #python3
+            </a>
+            <a class="tag" itemprop="isPartOf" href="/tag-servo">
+              #servo
+            </a>
+            <a class="tag" itemprop="isPartOf" href="/tag-stepper">
+              #stepper
+            </a>
+            <a class="tag" itemprop="isPartOf" href="/tag-wifi">
+              #wifi
+            </a>
+          </div>
+          <h3 itemprop="abstract">
+            A drawing robot accessory for the Ikea MÅLA easel.
+          </h3>
+          <span itemprop="subjectOf" itemscope="" itemtype="https://schema.org/ImageObject">
+            <meta itemprop="contentUrl" content="static/weezel_thumb.png">
+            <meta itemprop="thumbnailUrl" content="static/weezel_thumb.png">
+            <meta itemprop="name" content="Weezel Drawing Robot">
+            <meta itemprop="description" content="photo of the Weezel drawing robot">
+            <meta itemprop="encodingFormat" content="image/png">
+            <meta itemprop="uploadDate" content="2021-01-24T12:43:27.657665">
+            <picture>
+              <source srcset="static/weezel_thumb.webp" type="image/png">
+              <img src="static/weezel_thumb.png" alt="photo of the Weezel drawing robot">
+            </picture>
+          </span>
+        </section>
+        <section>
+          <h2>
+            Uses
+          </h2>
+          <ol class="links">
+            <li itemprop="hasPart" itemscope="" itemtype="https://schema.org/CreativeWork">
+              <a itemprop="url" href="/project-femtoweb">
+                <span itemprop="name">
+                  femtoweb
+                </span>
+              </a>
+            </li>
+          </ol>
+        </section>
+        <section>
+          <h2>
+            External Links
+          </h2>
+          <ol class="links">
+            <li>
+              <a itemprop="mainEntityOfPage" href="https://photos.app.goo.gl/4Nu9vLZbMouLfBRD7">
+                Google Photos Album
+              </a>
+            </li>
+          </ol>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      Generated on 2021-01-31 by 
       <a href="https://github.com/derekenos/derekenos.com-generator">
         derekenos.com-generator
       </a>
-    </div>
+    </footer>
   </body>
 </html>

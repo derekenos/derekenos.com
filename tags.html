@@ -20,177 +20,269 @@
     <meta http-equiv="Refresh" content="0; URL=/tag-8bit">
   </head>
   <body>
-    <nav>
-      <ol>
-        <li>
-          <a href="/">
-            home
-          </a>
-        </li>
-        <li>
-          <a href="/projects">
-            projects
-          </a>
-        </li>
-        <li>
-          <a href="/ambitions">
-            ambitions
-          </a>
-        </li>
-        <li class="current">
-          tags
-        </li>
-        <li>
-          <a href="/contact">
-            contact
-          </a>
-        </li>
-      </ol>
-      <div id="sub-nav-outer">
-        <div id="sub-nav-inner">
-          <span>
+    <header>
+      <nav id="main-nav">
+        <ol>
+          <li>
+            <a href="/">
+              home
+            </a>
+          </li>
+          <li>
+            <a href="/projects">
+              projects
+            </a>
+          </li>
+          <li>
+            <a href="/ambitions">
+              ambitions
+            </a>
+          </li>
+          <li id="active-main-nav-tab">
+            tags
+          </li>
+          <li>
+            <a href="/contact">
+              contact
+            </a>
+          </li>
+        </ol>
+      </nav>
+      <nav id="sub-nav" aria-labelledby="active-main-nav-tab">
+        <ol>
+          <li>
             #8bit
-          </span>
-          <a href="/tag-app">
-            #app
-          </a>
-          <a href="/tag-art">
-            #art
-          </a>
-          <a href="/tag-assemblylanguage">
-            #assemblylanguage
-          </a>
-          <a href="/tag-audio">
-            #audio
-          </a>
-          <a href="/tag-bolts">
-            #bolts
-          </a>
-          <a href="/tag-cloudflare">
-            #cloudflare
-          </a>
-          <a href="/tag-cnc">
-            #cnc
-          </a>
-          <a href="/tag-decoder">
-            #decoder
-          </a>
-          <a href="/tag-effects">
-            #effects
-          </a>
-          <a href="/tag-framework">
-            #framework
-          </a>
-          <a href="/tag-generator">
-            #generator
-          </a>
-          <a href="/tag-gpu">
-            #gpu
-          </a>
-          <a href="/tag-html">
-            #html
-          </a>
-          <a href="/tag-html5">
-            #html5
-          </a>
-          <a href="/tag-http">
-            #http
-          </a>
-          <a href="/tag-javascript">
-            #javascript
-          </a>
-          <a href="/tag-json">
-            #json
-          </a>
-          <a href="/tag-lasercut">
-            #lasercut
-          </a>
-          <a href="/tag-lofi">
-            #lofi
-          </a>
-          <a href="/tag-metal">
-            #metal
-          </a>
-          <a href="/tag-microcontroller">
-            #microcontroller
-          </a>
-          <a href="/tag-micropython">
-            #micropython
-          </a>
-          <a href="/tag-midi">
-            #midi
-          </a>
-          <a href="/tag-motor">
-            #motor
-          </a>
-          <a href="/tag-parser">
-            #parser
-          </a>
-          <a href="/tag-physicalcomputing">
-            #physicalcomputing
-          </a>
-          <a href="/tag-productivity">
-            #productivity
-          </a>
-          <a href="/tag-python3">
-            #python3
-          </a>
-          <a href="/tag-realtime">
-            #realtime
-          </a>
-          <a href="/tag-sampler">
-            #sampler
-          </a>
-          <a href="/tag-server">
-            #server
-          </a>
-          <a href="/tag-servo">
-            #servo
-          </a>
-          <a href="/tag-staticsite">
-            #staticsite
-          </a>
-          <a href="/tag-stepper">
-            #stepper
-          </a>
-          <a href="/tag-streaming">
-            #streaming
-          </a>
-          <a href="/tag-synthesizer">
-            #synthesizer
-          </a>
-          <a href="/tag-unicode">
-            #unicode
-          </a>
-          <a href="/tag-video">
-            #video
-          </a>
-          <a href="/tag-videogame">
-            #videogame
-          </a>
-          <a href="/tag-webapp">
-            #webapp
-          </a>
-          <a href="/tag-webaudio">
-            #webaudio
-          </a>
-          <a href="/tag-webcomponents">
-            #webcomponents
-          </a>
-          <a href="/tag-wifi">
-            #wifi
-          </a>
-          <a href="/tag-wood">
-            #wood
-          </a>
-        </div>
-      </div>
-    </nav>
-    <div class="footer">
-      Generated on 2021-01-30 by 
+          </li>
+          <li>
+            <a href="/tag-app">
+              #app
+            </a>
+          </li>
+          <li>
+            <a href="/tag-art">
+              #art
+            </a>
+          </li>
+          <li>
+            <a href="/tag-assemblylanguage">
+              #assemblylanguage
+            </a>
+          </li>
+          <li>
+            <a href="/tag-audio">
+              #audio
+            </a>
+          </li>
+          <li>
+            <a href="/tag-bolts">
+              #bolts
+            </a>
+          </li>
+          <li>
+            <a href="/tag-cloudflare">
+              #cloudflare
+            </a>
+          </li>
+          <li>
+            <a href="/tag-cnc">
+              #cnc
+            </a>
+          </li>
+          <li>
+            <a href="/tag-decoder">
+              #decoder
+            </a>
+          </li>
+          <li>
+            <a href="/tag-effects">
+              #effects
+            </a>
+          </li>
+          <li>
+            <a href="/tag-framework">
+              #framework
+            </a>
+          </li>
+          <li>
+            <a href="/tag-generator">
+              #generator
+            </a>
+          </li>
+          <li>
+            <a href="/tag-gpu">
+              #gpu
+            </a>
+          </li>
+          <li>
+            <a href="/tag-html">
+              #html
+            </a>
+          </li>
+          <li>
+            <a href="/tag-html5">
+              #html5
+            </a>
+          </li>
+          <li>
+            <a href="/tag-http">
+              #http
+            </a>
+          </li>
+          <li>
+            <a href="/tag-javascript">
+              #javascript
+            </a>
+          </li>
+          <li>
+            <a href="/tag-json">
+              #json
+            </a>
+          </li>
+          <li>
+            <a href="/tag-lasercut">
+              #lasercut
+            </a>
+          </li>
+          <li>
+            <a href="/tag-lofi">
+              #lofi
+            </a>
+          </li>
+          <li>
+            <a href="/tag-metal">
+              #metal
+            </a>
+          </li>
+          <li>
+            <a href="/tag-microcontroller">
+              #microcontroller
+            </a>
+          </li>
+          <li>
+            <a href="/tag-micropython">
+              #micropython
+            </a>
+          </li>
+          <li>
+            <a href="/tag-midi">
+              #midi
+            </a>
+          </li>
+          <li>
+            <a href="/tag-motor">
+              #motor
+            </a>
+          </li>
+          <li>
+            <a href="/tag-parser">
+              #parser
+            </a>
+          </li>
+          <li>
+            <a href="/tag-physicalcomputing">
+              #physicalcomputing
+            </a>
+          </li>
+          <li>
+            <a href="/tag-productivity">
+              #productivity
+            </a>
+          </li>
+          <li>
+            <a href="/tag-python3">
+              #python3
+            </a>
+          </li>
+          <li>
+            <a href="/tag-realtime">
+              #realtime
+            </a>
+          </li>
+          <li>
+            <a href="/tag-sampler">
+              #sampler
+            </a>
+          </li>
+          <li>
+            <a href="/tag-server">
+              #server
+            </a>
+          </li>
+          <li>
+            <a href="/tag-servo">
+              #servo
+            </a>
+          </li>
+          <li>
+            <a href="/tag-staticsite">
+              #staticsite
+            </a>
+          </li>
+          <li>
+            <a href="/tag-stepper">
+              #stepper
+            </a>
+          </li>
+          <li>
+            <a href="/tag-streaming">
+              #streaming
+            </a>
+          </li>
+          <li>
+            <a href="/tag-synthesizer">
+              #synthesizer
+            </a>
+          </li>
+          <li>
+            <a href="/tag-unicode">
+              #unicode
+            </a>
+          </li>
+          <li>
+            <a href="/tag-video">
+              #video
+            </a>
+          </li>
+          <li>
+            <a href="/tag-videogame">
+              #videogame
+            </a>
+          </li>
+          <li>
+            <a href="/tag-webapp">
+              #webapp
+            </a>
+          </li>
+          <li>
+            <a href="/tag-webaudio">
+              #webaudio
+            </a>
+          </li>
+          <li>
+            <a href="/tag-webcomponents">
+              #webcomponents
+            </a>
+          </li>
+          <li>
+            <a href="/tag-wifi">
+              #wifi
+            </a>
+          </li>
+          <li>
+            <a href="/tag-wood">
+              #wood
+            </a>
+          </li>
+        </ol>
+      </nav>
+    </header>
+    <main>
+    </main>
+    <footer class="footer">
+      Generated on 2021-01-31 by 
       <a href="https://github.com/derekenos/derekenos.com-generator">
         derekenos.com-generator
       </a>
-    </div>
+    </footer>
   </body>
 </html>
