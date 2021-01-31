@@ -26,7 +26,6 @@ https://derekenos.com/project-demidulator.html
 https://derekenos.com/project-beginner-s-box.html
 https://derekenos.com/project-video-feedback-instrument.html
 https://derekenos.com/project-physical-interface-prototype.html
-https://derekenos.com/ambitions.html
 https://derekenos.com/tags.html
 https://derekenos.com/tag-8bit.html
 https://derekenos.com/tag-app.html
@@ -74,3 +73,4 @@ https://derekenos.com/tag-webcomponents.html
 https://derekenos.com/tag-wifi.html
 https://derekenos.com/tag-wood.html
 https://derekenos.com/index.html
+https://derekenos.com/ideas.html
