@@ -28,6 +28,16 @@
     <meta property="og:title" content="UTF-8 Decoder">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://derekenos.com/project-utf8-decoder">
+    <script>
+      
+      document.addEventListener("DOMContentLoaded", () => {
+        // Scroll sub-nav to the current active tab.
+        const subnavOl = document.querySelector("#sub-nav > ol")
+        const activeLi = subnavOl.querySelector("li.active")
+        subnavOl.scrollLeft = activeLi.offsetLeft
+      })
+      
+    </script>
   </head>
   <body>
     <header>
@@ -60,9 +70,6 @@
       </nav>
       <nav id="sub-nav" aria-labelledby="active-main-nav-tab">
         <ol>
-          <li>
-            UTF-8 Decoder
-          </li>
           <li>
             <a href="/project-derekenos-com-generator">
               Static Site Generator
@@ -97,6 +104,9 @@
             <a href="/project-strptime">
               time.strptime()
             </a>
+          </li>
+          <li class="active">
+            UTF-8 Decoder
           </li>
           <li>
             <a href="/project-cardboard-boxcade">

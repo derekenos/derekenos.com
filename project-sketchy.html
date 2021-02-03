@@ -28,6 +28,16 @@
     <meta property="og:title" content="Sketchy">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://derekenos.com/project-sketchy">
+    <script>
+      
+      document.addEventListener("DOMContentLoaded", () => {
+        // Scroll sub-nav to the current active tab.
+        const subnavOl = document.querySelector("#sub-nav > ol")
+        const activeLi = subnavOl.querySelector("li.active")
+        subnavOl.scrollLeft = activeLi.offsetLeft
+      })
+      
+    </script>
   </head>
   <body>
     <header>
@@ -60,9 +70,6 @@
       </nav>
       <nav id="sub-nav" aria-labelledby="active-main-nav-tab">
         <ol>
-          <li>
-            Sketchy
-          </li>
           <li>
             <a href="/project-derekenos-com-generator">
               Static Site Generator
@@ -132,6 +139,9 @@
             <a href="/project-important-message">
               Important Message
             </a>
+          </li>
+          <li class="active">
+            Sketchy
           </li>
           <li>
             <a href="/project-babygate">

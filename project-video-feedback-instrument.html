@@ -28,6 +28,16 @@
     <meta property="og:title" content="Video Feedback Instrument">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://derekenos.com/project-video-feedback-instrument">
+    <script>
+      
+      document.addEventListener("DOMContentLoaded", () => {
+        // Scroll sub-nav to the current active tab.
+        const subnavOl = document.querySelector("#sub-nav > ol")
+        const activeLi = subnavOl.querySelector("li.active")
+        subnavOl.scrollLeft = activeLi.offsetLeft
+      })
+      
+    </script>
   </head>
   <body>
     <header>
@@ -60,9 +70,6 @@
       </nav>
       <nav id="sub-nav" aria-labelledby="active-main-nav-tab">
         <ol>
-          <li>
-            Video Feedback Instrument
-          </li>
           <li>
             <a href="/project-derekenos-com-generator">
               Static Site Generator
@@ -182,6 +189,9 @@
             <a href="/project-beginner-s-box">
               Beginner's Box
             </a>
+          </li>
+          <li class="active">
+            Video Feedback Instrument
           </li>
           <li>
             <a href="/project-physical-interface-prototype">

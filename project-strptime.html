@@ -28,6 +28,16 @@
     <meta property="og:title" content="time.strptime()">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://derekenos.com/project-strptime">
+    <script>
+      
+      document.addEventListener("DOMContentLoaded", () => {
+        // Scroll sub-nav to the current active tab.
+        const subnavOl = document.querySelector("#sub-nav > ol")
+        const activeLi = subnavOl.querySelector("li.active")
+        subnavOl.scrollLeft = activeLi.offsetLeft
+      })
+      
+    </script>
   </head>
   <body>
     <header>
@@ -61,9 +71,6 @@
       <nav id="sub-nav" aria-labelledby="active-main-nav-tab">
         <ol>
           <li>
-            time.strptime()
-          </li>
-          <li>
             <a href="/project-derekenos-com-generator">
               Static Site Generator
             </a>
@@ -92,6 +99,9 @@
             <a href="/project-streaming-json-parser">
               Streaming JSON Parser
             </a>
+          </li>
+          <li class="active">
+            time.strptime()
           </li>
           <li>
             <a href="/project-utf8-decoder">

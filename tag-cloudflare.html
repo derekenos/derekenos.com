@@ -17,16 +17,26 @@
       gtag('config', 'UA-19335494-1');
       
     </script>
+    <title>
+      Derek Enos | #cloudflare
+    </title>
     <meta name="author" content="Derek Enos">
     <meta name="description" content="A collection of projects associated with the tag #cloudflare.">
     <meta property="og:description" content="A collection of projects associated with the tag #cloudflare.">
     <meta name="keywords" content="cloudflare, tag, projects">
     <meta property="og:title" content="Derek Enos | #cloudflare">
-    <title>
-      Derek Enos | #cloudflare
-    </title>
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://derekenos.com/tag-cloudflare">
+    <script>
+      
+      document.addEventListener("DOMContentLoaded", () => {
+        // Scroll sub-nav to the current active tab.
+        const subnavOl = document.querySelector("#sub-nav > ol")
+        const activeLi = subnavOl.querySelector("li.active")
+        subnavOl.scrollLeft = activeLi.offsetLeft
+      })
+      
+    </script>
   </head>
   <body>
     <header>
@@ -60,9 +70,6 @@
       <nav id="sub-nav" aria-labelledby="active-main-nav-tab">
         <ol>
           <li>
-            #cloudflare
-          </li>
-          <li>
             <a href="/tag-8bit">
               #8bit
             </a>
@@ -91,6 +98,9 @@
             <a href="/tag-bolts">
               #bolts
             </a>
+          </li>
+          <li class="active">
+            #cloudflare
           </li>
           <li>
             <a href="/tag-cnc">

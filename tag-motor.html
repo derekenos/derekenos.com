@@ -17,16 +17,26 @@
       gtag('config', 'UA-19335494-1');
       
     </script>
+    <title>
+      Derek Enos | #motor
+    </title>
     <meta name="author" content="Derek Enos">
     <meta name="description" content="A collection of projects associated with the tag #motor.">
     <meta property="og:description" content="A collection of projects associated with the tag #motor.">
     <meta name="keywords" content="motor, tag, projects">
     <meta property="og:title" content="Derek Enos | #motor">
-    <title>
-      Derek Enos | #motor
-    </title>
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://derekenos.com/tag-motor">
+    <script>
+      
+      document.addEventListener("DOMContentLoaded", () => {
+        // Scroll sub-nav to the current active tab.
+        const subnavOl = document.querySelector("#sub-nav > ol")
+        const activeLi = subnavOl.querySelector("li.active")
+        subnavOl.scrollLeft = activeLi.offsetLeft
+      })
+      
+    </script>
   </head>
   <body>
     <header>
@@ -59,9 +69,6 @@
       </nav>
       <nav id="sub-nav" aria-labelledby="active-main-nav-tab">
         <ol>
-          <li>
-            #motor
-          </li>
           <li>
             <a href="/tag-8bit">
               #8bit
@@ -181,6 +188,9 @@
             <a href="/tag-midi">
               #midi
             </a>
+          </li>
+          <li class="active">
+            #motor
           </li>
           <li>
             <a href="/tag-parser">

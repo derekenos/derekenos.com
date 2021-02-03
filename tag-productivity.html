@@ -17,16 +17,26 @@
       gtag('config', 'UA-19335494-1');
       
     </script>
+    <title>
+      Derek Enos | #productivity
+    </title>
     <meta name="author" content="Derek Enos">
     <meta name="description" content="A collection of projects associated with the tag #productivity.">
     <meta property="og:description" content="A collection of projects associated with the tag #productivity.">
     <meta name="keywords" content="productivity, tag, projects">
     <meta property="og:title" content="Derek Enos | #productivity">
-    <title>
-      Derek Enos | #productivity
-    </title>
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://derekenos.com/tag-productivity">
+    <script>
+      
+      document.addEventListener("DOMContentLoaded", () => {
+        // Scroll sub-nav to the current active tab.
+        const subnavOl = document.querySelector("#sub-nav > ol")
+        const activeLi = subnavOl.querySelector("li.active")
+        subnavOl.scrollLeft = activeLi.offsetLeft
+      })
+      
+    </script>
   </head>
   <body>
     <header>
@@ -59,9 +69,6 @@
       </nav>
       <nav id="sub-nav" aria-labelledby="active-main-nav-tab">
         <ol>
-          <li>
-            #productivity
-          </li>
           <li>
             <a href="/tag-8bit">
               #8bit
@@ -196,6 +203,9 @@
             <a href="/tag-physicalcomputing">
               #physicalcomputing
             </a>
+          </li>
+          <li class="active">
+            #productivity
           </li>
           <li>
             <a href="/tag-python3">

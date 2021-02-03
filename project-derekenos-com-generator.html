@@ -28,6 +28,16 @@
     <meta property="og:title" content="Static Site Generator">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://derekenos.com/project-derekenos-com-generator">
+    <script>
+      
+      document.addEventListener("DOMContentLoaded", () => {
+        // Scroll sub-nav to the current active tab.
+        const subnavOl = document.querySelector("#sub-nav > ol")
+        const activeLi = subnavOl.querySelector("li.active")
+        subnavOl.scrollLeft = activeLi.offsetLeft
+      })
+      
+    </script>
   </head>
   <body>
     <header>
@@ -60,7 +70,7 @@
       </nav>
       <nav id="sub-nav" aria-labelledby="active-main-nav-tab">
         <ol>
-          <li>
+          <li class="active">
             Static Site Generator
           </li>
           <li>

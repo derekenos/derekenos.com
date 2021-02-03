@@ -17,16 +17,26 @@
       gtag('config', 'UA-19335494-1');
       
     </script>
+    <title>
+      Derek Enos | #streaming
+    </title>
     <meta name="author" content="Derek Enos">
     <meta name="description" content="A collection of projects associated with the tag #streaming.">
     <meta property="og:description" content="A collection of projects associated with the tag #streaming.">
     <meta name="keywords" content="streaming, tag, projects">
     <meta property="og:title" content="Derek Enos | #streaming">
-    <title>
-      Derek Enos | #streaming
-    </title>
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://derekenos.com/tag-streaming">
+    <script>
+      
+      document.addEventListener("DOMContentLoaded", () => {
+        // Scroll sub-nav to the current active tab.
+        const subnavOl = document.querySelector("#sub-nav > ol")
+        const activeLi = subnavOl.querySelector("li.active")
+        subnavOl.scrollLeft = activeLi.offsetLeft
+      })
+      
+    </script>
   </head>
   <body>
     <header>
@@ -59,9 +69,6 @@
       </nav>
       <nav id="sub-nav" aria-labelledby="active-main-nav-tab">
         <ol>
-          <li>
-            #streaming
-          </li>
           <li>
             <a href="/tag-8bit">
               #8bit
@@ -236,6 +243,9 @@
             <a href="/tag-stepper">
               #stepper
             </a>
+          </li>
+          <li class="active">
+            #streaming
           </li>
           <li>
             <a href="/tag-synthesizer">

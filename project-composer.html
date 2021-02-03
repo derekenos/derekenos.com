@@ -28,6 +28,16 @@
     <meta property="og:title" content="Composer">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://derekenos.com/project-composer">
+    <script>
+      
+      document.addEventListener("DOMContentLoaded", () => {
+        // Scroll sub-nav to the current active tab.
+        const subnavOl = document.querySelector("#sub-nav > ol")
+        const activeLi = subnavOl.querySelector("li.active")
+        subnavOl.scrollLeft = activeLi.offsetLeft
+      })
+      
+    </script>
   </head>
   <body>
     <header>
@@ -60,9 +70,6 @@
       </nav>
       <nav id="sub-nav" aria-labelledby="active-main-nav-tab">
         <ol>
-          <li>
-            Composer
-          </li>
           <li>
             <a href="/project-derekenos-com-generator">
               Static Site Generator
@@ -162,6 +169,9 @@
             <a href="/project-delta-robot">
               Delta Robot
             </a>
+          </li>
+          <li class="active">
+            Composer
           </li>
           <li>
             <a href="/project-ion-model">

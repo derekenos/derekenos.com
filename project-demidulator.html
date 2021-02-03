@@ -28,6 +28,16 @@
     <meta property="og:title" content="deMIDulator">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://derekenos.com/project-demidulator">
+    <script>
+      
+      document.addEventListener("DOMContentLoaded", () => {
+        // Scroll sub-nav to the current active tab.
+        const subnavOl = document.querySelector("#sub-nav > ol")
+        const activeLi = subnavOl.querySelector("li.active")
+        subnavOl.scrollLeft = activeLi.offsetLeft
+      })
+      
+    </script>
   </head>
   <body>
     <header>
@@ -60,9 +70,6 @@
       </nav>
       <nav id="sub-nav" aria-labelledby="active-main-nav-tab">
         <ol>
-          <li>
-            deMIDulator
-          </li>
           <li>
             <a href="/project-derekenos-com-generator">
               Static Site Generator
@@ -172,6 +179,9 @@
             <a href="/project-ion-model">
               Ion Model
             </a>
+          </li>
+          <li class="active">
+            deMIDulator
           </li>
           <li>
             <a href="/project-beginner-s-box">
