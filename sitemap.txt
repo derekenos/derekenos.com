@@ -1,6 +1,8 @@
 https://derekenos.com/
-https://derekenos.com/contact.html
+https://derekenos.com/redirects.html
 https://derekenos.com/dIndex.html
+https://derekenos.com/deMIDulator_overview.html
+https://derekenos.com/contact.html
 https://derekenos.com/projects.html
 https://derekenos.com/project-x-ray-painter.html
 https://derekenos.com/project-derekenos-com-generator.html
@@ -75,6 +77,5 @@ https://derekenos.com/tag-webaudio.html
 https://derekenos.com/tag-webcomponents.html
 https://derekenos.com/tag-wifi.html
 https://derekenos.com/tag-wood.html
-https://derekenos.com/deMIDulator_overview.html
 https://derekenos.com/index.html
 https://derekenos.com/ideas.html
