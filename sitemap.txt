@@ -4,7 +4,7 @@ https://derekenos.com/dIndex.html
 https://derekenos.com/deMIDulator_overview.html
 https://derekenos.com/contact.html
 https://derekenos.com/projects.html
-https://derekenos.com/interface-research-lab.html
+https://derekenos.com/project-interface-research-lab.html
 https://derekenos.com/project-x-ray-painter.html
 https://derekenos.com/project-derekenos-com-generator.html
 https://derekenos.com/project-htmlephant.html
