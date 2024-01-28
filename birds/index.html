@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <script>
+     const birds = [
+       [
+         "American Goldfinch",
+         "306710541-480px.jpg",
+         "550633.mp3",
+       ],
+       [
+         "Tufted Titmouse",
+         "302627281-480px.jpg",
+         "549946.mp3",
+       ],
+       [
+         "Black-capped Chickadee",
+         "302472691-480px.jpg",
+         "549875.mp3",
+       ],
+       [
+         "House Sparrow",
+         "305880301-480px.jpg",
+         "550462.mp3",
+       ],
+       [
+         "Dark-eyed Junco",
+         "66115711-480px.jpg",
+         "550821.mp3",
+       ],
+       [
+         "Northern Cardinal",
+         "297087301-480px.jpg",
+         "551661.mp3",
+       ],
+       [
+         "Song Sparrow",
+         "308771371-480px.jpg",
+         "550973.mp3",
+       ],
+     ];
+
+     function init() {
+       for (const [name, imgName, songName] of birds) {
+         const wrapper = document.createElement("div");
+         document.body.innerHTML += `
+           <div>
+             <h2>${name}</h2>
+             <img name="${name}" src="${imgName}">
+             <audio preload name="${name}" src="${songName}" controls></audio>
+           </div>
+         `;
+       }
+     }
+
+     document.addEventListener("DOMContentLoaded", () => init());
+
+    </script>
+
+    <style>
+     body {
+       text-align: center;
+       background-color: #000;
+     }
+     img {
+       width: 50%;
+       border-radius: 8px;
+     }
+     audio {
+       display: block;
+       width: 100%;
+       margin-top: 1rem;
+     }
+     div {
+       margin: 0.5rem;
+       padding: 1rem;
+       background: linear-gradient(#ccf, #aaf);
+     }
+    </style>
+  </head>
+
+  <body>
+  </body>
+
+</html>
