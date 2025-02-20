@@ -1,8 +1,5 @@
 https://derekenos.com/
-https://derekenos.com/redirects.html
-https://derekenos.com/dIndex.html
-https://derekenos.com/deMIDulator_overview.html
-https://derekenos.com/contact.html
+https://derekenos.com/ideas.html
 https://derekenos.com/projects.html
 https://derekenos.com/project-interface-research-lab.html
 https://derekenos.com/project-x-ray-painter.html
@@ -32,6 +29,11 @@ https://derekenos.com/project-demidulator.html
 https://derekenos.com/project-beginner-s-box.html
 https://derekenos.com/project-video-feedback-instrument.html
 https://derekenos.com/project-physical-interface-prototype.html
+https://derekenos.com/contact.html
+https://derekenos.com/redirects.html
+https://derekenos.com/dIndex.html
+https://derekenos.com/deMIDulator_overview.html
+https://derekenos.com/index.html
 https://derekenos.com/tags.html
 https://derekenos.com/tag-8bit.html
 https://derekenos.com/tag-app.html
@@ -78,5 +80,3 @@ https://derekenos.com/tag-webaudio.html
 https://derekenos.com/tag-webcomponents.html
 https://derekenos.com/tag-wifi.html
 https://derekenos.com/tag-wood.html
-https://derekenos.com/index.html
-https://derekenos.com/ideas.html
