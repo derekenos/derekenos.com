@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="https://github.com/derekenos/derekenos.com-generator">
+    <link rel="stylesheet" href="static/styles/shared.css">
+    <title>
+      Derek Enos | Mecanum Robot
+    </title>
+    <meta name="author" content="Derek Enos">
+    <meta name="description" content="A bluetooth gamepad-controlled robot with Mecanum wheels.">
+    <meta property="og:description" content="A bluetooth gamepad-controlled robot with Mecanum wheels.">
+    <meta property="og:image" content="https://derekenos-com-1.nyc3.cdn.digitaloceanspaces.com/project-mecanum-robot-b9754175-750px.jpg">
+    <meta name="keywords" content="art,lasercut,microcontroller,motor,robot,stepper,wood">
+    <meta property="og:title" content="Mecanum Robot">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://derekenos.com/mecanum-robot">
+    <script>
+      
+      document.addEventListener("DOMContentLoaded", () => {
+        // Scroll sub-nav to the current active tab.
+        const subnavOl = document.querySelector("#sub-nav > ol")
+        const activeLi = subnavOl.querySelector("li.active")
+        subnavOl.scrollLeft = activeLi.offsetLeft
+      })
+      
+    </script>
+  </head>
+  <body>
+    <header>
+      <nav id="main-nav" aria-label="primary">
+        <ol>
+          <li>
+            <a href="/">
+              home
+            </a>
+          </li>
+          <li id="active-main-nav-tab">
+            projects
+          </li>
+          <li>
+            <a href="/ideas">
+              ideas
+            </a>
+          </li>
+          <li>
+            <a href="/tags">
+              tags
+            </a>
+          </li>
+          <li>
+            <a href="/contact">
+              contact
+            </a>
+          </li>
+        </ol>
+      </nav>
+      <nav id="sub-nav" aria-labelledby="active-main-nav-tab">
+        <ol>
+          <li class="active">
+            Mecanum Robot
+          </li>
+          <li>
+            <a href="/pill-box">
+              Pill Box
+            </a>
+          </li>
+          <li>
+            <a href="/beacon-community-network">
+              Beacon Community Network
+            </a>
+          </li>
+          <li>
+            <a href="/project-x-ray-painter">
+              X-ray Painter
+            </a>
+          </li>
+          <li>
+            <a href="/project-derekenos-com-generator">
+              Static Site Generator
+            </a>
+          </li>
+          <li>
+            <a href="/project-htmlephant">
+              HTMLephant
+            </a>
+          </li>
+          <li>
+            <a href="/project-femtoweb">
+              femtoweb
+            </a>
+          </li>
+          <li>
+            <a href="/project-weather-station">
+              Weather Station
+            </a>
+          </li>
+          <li>
+            <a href="/project-indicator-gauge">
+              Indicator Gauge
+            </a>
+          </li>
+          <li>
+            <a href="/project-streaming-json-parser">
+              Streaming JSON Parser
+            </a>
+          </li>
+          <li>
+            <a href="/project-strptime">
+              time.strptime()
+            </a>
+          </li>
+          <li>
+            <a href="/project-utf8-decoder">
+              UTF-8 Decoder
+            </a>
+          </li>
+          <li>
+            <a href="/project-cardboard-boxcade">
+              Cardboard Boxcade
+            </a>
+          </li>
+          <li>
+            <a href="/project-trtl">
+              Trtl
+            </a>
+          </li>
+          <li>
+            <a href="/project-weezel">
+              Weezel
+            </a>
+          </li>
+          <li>
+            <a href="/project-modular-arcade-cabinet">
+              Modular Arcade Cabinet
+            </a>
+          </li>
+          <li>
+            <a href="/project-gritty-viddy">
+              Gritty Viddy
+            </a>
+          </li>
+          <li>
+            <a href="/project-important-message">
+              Important Message
+            </a>
+          </li>
+          <li>
+            <a href="/project-sketchy">
+              Sketchy
+            </a>
+          </li>
+          <li>
+            <a href="/project-babygate">
+              Babygate
+            </a>
+          </li>
+          <li>
+            <a href="/project-iome">
+              iome
+            </a>
+          </li>
+          <li>
+            <a href="/project-laser-cut-keypad">
+              Laser-cut Keypad
+            </a>
+          </li>
+          <li>
+            <a href="/project-physical-platformer-game-prototype">
+              Physical Platformer Game Prototype
+            </a>
+          </li>
+          <li>
+            <a href="/project-delta-robot">
+              Delta Robot
+            </a>
+          </li>
+          <li>
+            <a href="/project-composer">
+              Composer
+            </a>
+          </li>
+          <li>
+            <a href="/project-ion-model">
+              Ion Model
+            </a>
+          </li>
+          <li>
+            <a href="/project-demidulator">
+              deMIDulator
+            </a>
+          </li>
+          <li>
+            <a href="/project-beginner-s-box">
+              Beginner's Box
+            </a>
+          </li>
+          <li>
+            <a href="/project-video-feedback-instrument">
+              Video Feedback Instrument
+            </a>
+          </li>
+          <li>
+            <a href="/project-physical-interface-prototype">
+              Physical Interface Prototype
+            </a>
+          </li>
+        </ol>
+      </nav>
+    </header>
+    <main class="project" itemscope="" itemtype="https://schema.org/CreativeWork">
+      <h1>
+        Mecanum Robot Project Details
+      </h1>
+      <section>
+        <h2 itemprop="name">
+          Mecanum Robot
+        </h2>
+        <div>
+          <a class="tag" itemprop="isPartOf" href="/tag-art">
+            #art
+          </a>
+          <a class="tag" itemprop="isPartOf" href="/tag-lasercut">
+            #lasercut
+          </a>
+          <a class="tag" itemprop="isPartOf" href="/tag-microcontroller">
+            #microcontroller
+          </a>
+          <a class="tag" itemprop="isPartOf" href="/tag-motor">
+            #motor
+          </a>
+          <a class="tag" itemprop="isPartOf" href="/tag-robot">
+            #robot
+          </a>
+          <a class="tag" itemprop="isPartOf" href="/tag-stepper">
+            #stepper
+          </a>
+          <a class="tag" itemprop="isPartOf" href="/tag-wood">
+            #wood
+          </a>
+        </div>
+        <h3 itemprop="abstract">
+          A bluetooth gamepad-controlled robot with Mecanum wheels.
+        </h3>
+        <span itemprop="subjectOf" itemscope="" itemtype="https://schema.org/ImageObject" class="picture-wrapper" style="display: inline-block;">
+          <meta itemprop="contentUrl" content="https://derekenos-com-1.nyc3.cdn.digitaloceanspaces.com/project-mecanum-robot-b9754175-1108x871-original.jpg">
+          <meta itemprop="thumbnailUrl" content="https://derekenos-com-1.nyc3.cdn.digitaloceanspaces.com/project-mecanum-robot-b9754175-750px.jpg">
+          <meta itemprop="name" content="Mecanum robot">
+          <meta itemprop="description" content="A photograph of a robot with a laser-cut wood frame and Mecanum wheels">
+          <meta itemprop="encodingFormat" content="image/jpeg">
+          <meta itemprop="uploadDate" content="2025-04-25T15:34:58">
+          <picture style="display: inline-block; width: 100%; height: 0; position: relative; padding-bottom: 78.61010830324909%;">
+            <source srcset="https://derekenos-com-1.nyc3.cdn.digitaloceanspaces.com/project-mecanum-robot-b9754175-1108px.webp 1108w, https://derekenos-com-1.nyc3.cdn.digitaloceanspaces.com/project-mecanum-robot-b9754175-1000px.webp 1000w, https://derekenos-com-1.nyc3.cdn.digitaloceanspaces.com/project-mecanum-robot-b9754175-750px.webp 750w, https://derekenos-com-1.nyc3.cdn.digitaloceanspaces.com/project-mecanum-robot-b9754175-500px.webp 500w, https://derekenos-com-1.nyc3.cdn.digitaloceanspaces.com/project-mecanum-robot-b9754175-300px.webp 300w, https://derekenos-com-1.nyc3.cdn.digitaloceanspaces.com/project-mecanum-robot-b9754175-100px.webp 100w" sizes="90vw" type="image/webp">
+            <source srcset="https://derekenos-com-1.nyc3.cdn.digitaloceanspaces.com/project-mecanum-robot-b9754175-1108px.jpg 1108w, https://derekenos-com-1.nyc3.cdn.digitaloceanspaces.com/project-mecanum-robot-b9754175-1000px.jpg 1000w, https://derekenos-com-1.nyc3.cdn.digitaloceanspaces.com/project-mecanum-robot-b9754175-750px.jpg 750w, https://derekenos-com-1.nyc3.cdn.digitaloceanspaces.com/project-mecanum-robot-b9754175-500px.jpg 500w, https://derekenos-com-1.nyc3.cdn.digitaloceanspaces.com/project-mecanum-robot-b9754175-300px.jpg 300w, https://derekenos-com-1.nyc3.cdn.digitaloceanspaces.com/project-mecanum-robot-b9754175-100px.jpg 100w" sizes="90vw" type="image/jpeg">
+            <img src="https://derekenos-com-1.nyc3.cdn.digitaloceanspaces.com/project-mecanum-robot-b9754175-750px.jpg" loading="lazy" alt="A photograph of a robot with a laser-cut wood frame and Mecanum wheels" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+          </picture>
+        </span>
+      </section>
+      <section>
+        <h2>
+          Videos
+        </h2>
+        <div class="collection">
+          <div class="item">
+            <video itemprop="subjectOf" itemscope="" itemtype="https://schema.org/VideoObject" controls="" preload="none" poster="https://derekenos-com-1.nyc3.cdn.digitaloceanspaces.com/project-mecanum-robot-aac460ad-original-poster.jpg">
+              <source src="https://derekenos-com-1.nyc3.cdn.digitaloceanspaces.com/project-mecanum-robot-aac460ad-original.mp4" type="video/mp4">
+              <meta itemprop="contentUrl" content="https://derekenos-com-1.nyc3.cdn.digitaloceanspaces.com/project-mecanum-robot-aac460ad-original.mp4">
+              <meta itemprop="thumbnailUrl" content="https://derekenos-com-1.nyc3.cdn.digitaloceanspaces.com/project-mecanum-robot-aac460ad-original-poster.jpg">
+              <meta itemprop="name" content="Mecanum robot driving test">
+              <meta itemprop="description" content="A movie of the Mecanum robot driving around">
+              <meta itemprop="encodingFormat" content="video/mp4">
+              <meta itemprop="uploadDate" content="2025-04-25T15:43:15">
+            </video>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2>
+          More Images
+        </h2>
+        <div class="collection">
+          <div class="item">
+            <a href="https://derekenos-com-1.nyc3.cdn.digitaloceanspaces.com/project-mecanum-robot-b1109c50-2592x1944-original.jpg">
+              <span itemprop="subjectOf" itemscope="" itemtype="https://schema.org/ImageObject" class="picture-wrapper" style="display: inline-block;">
+                <meta itemprop="contentUrl" content="https://derekenos-com-1.nyc3.cdn.digitaloceanspaces.com/project-mecanum-robot-b1109c50-2592x1944-original.jpg">
+                <meta itemprop="thumbnailUrl" content="https://derekenos-com-1.nyc3.cdn.digitaloceanspaces.com/project-mecanum-robot-b1109c50-750px.jpg">
+                <meta itemprop="name" content="Mecanum robots">
+                <meta itemprop="description" content="A photograph of two robots with laser-cut wood frames, Mecanum wheels, and two wireless gamepads on the table top in front of them">
+                <meta itemprop="encodingFormat" content="image/jpeg">
+                <meta itemprop="uploadDate" content="2025-04-25T15:34:58">
+                <picture style="display: inline-block; width: 100%; height: 0; position: relative; padding-bottom: 75.0%;">
+                  <source srcset="https://derekenos-com-1.nyc3.cdn.digitaloceanspaces.com/project-mecanum-robot-b1109c50-2500px.webp 2500w, https://derekenos-com-1.nyc3.cdn.digitaloceanspaces.com/project-mecanum-robot-b1109c50-1500px.webp 1500w, https://derekenos-com-1.nyc3.cdn.digitaloceanspaces.com/project-mecanum-robot-b1109c50-1000px.webp 1000w, https://derekenos-com-1.nyc3.cdn.digitaloceanspaces.com/project-mecanum-robot-b1109c50-750px.webp 750w, https://derekenos-com-1.nyc3.cdn.digitaloceanspaces.com/project-mecanum-robot-b1109c50-500px.webp 500w, https://derekenos-com-1.nyc3.cdn.digitaloceanspaces.com/project-mecanum-robot-b1109c50-300px.webp 300w, https://derekenos-com-1.nyc3.cdn.digitaloceanspaces.com/project-mecanum-robot-b1109c50-100px.webp 100w" sizes="(min-width: 1024px) 25vw, 94vw" type="image/webp">
+                  <source srcset="https://derekenos-com-1.nyc3.cdn.digitaloceanspaces.com/project-mecanum-robot-b1109c50-2500px.jpg 2500w, https://derekenos-com-1.nyc3.cdn.digitaloceanspaces.com/project-mecanum-robot-b1109c50-1500px.jpg 1500w, https://derekenos-com-1.nyc3.cdn.digitaloceanspaces.com/project-mecanum-robot-b1109c50-1000px.jpg 1000w, https://derekenos-com-1.nyc3.cdn.digitaloceanspaces.com/project-mecanum-robot-b1109c50-750px.jpg 750w, https://derekenos-com-1.nyc3.cdn.digitaloceanspaces.com/project-mecanum-robot-b1109c50-500px.jpg 500w, https://derekenos-com-1.nyc3.cdn.digitaloceanspaces.com/project-mecanum-robot-b1109c50-300px.jpg 300w, https://derekenos-com-1.nyc3.cdn.digitaloceanspaces.com/project-mecanum-robot-b1109c50-100px.jpg 100w" sizes="(min-width: 1024px) 25vw, 94vw" type="image/jpeg">
+                  <img src="https://derekenos-com-1.nyc3.cdn.digitaloceanspaces.com/project-mecanum-robot-b1109c50-750px.jpg" loading="lazy" alt="A photograph of two robots with laser-cut wood frames, Mecanum wheels, and two wireless gamepads on the table top in front of them" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+                </picture>
+              </span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      Generated on 2025-04-25 by 
+      <a href="https://github.com/derekenos/derekenos.com-generator">
+        derekenos.com-generator
+      </a>
+    </footer>
+  </body>
+</html>

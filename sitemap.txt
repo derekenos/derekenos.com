@@ -1,7 +1,9 @@
 https://derekenos.com/
 https://derekenos.com/ideas.html
 https://derekenos.com/projects.html
-https://derekenos.com/project-interface-research-lab.html
+https://derekenos.com/mecanum-robot.html
+https://derekenos.com/pill-box.html
+https://derekenos.com/beacon-community-network.html
 https://derekenos.com/project-x-ray-painter.html
 https://derekenos.com/project-derekenos-com-generator.html
 https://derekenos.com/project-htmlephant.html
@@ -65,6 +67,7 @@ https://derekenos.com/tag-physicalcomputing.html
 https://derekenos.com/tag-productivity.html
 https://derekenos.com/tag-python3.html
 https://derekenos.com/tag-realtime.html
+https://derekenos.com/tag-robot.html
 https://derekenos.com/tag-sampler.html
 https://derekenos.com/tag-server.html
 https://derekenos.com/tag-servo.html
