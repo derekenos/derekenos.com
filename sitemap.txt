@@ -1,6 +1,7 @@
 https://derekenos.com/
 https://derekenos.com/ideas.html
 https://derekenos.com/projects.html
+https://derekenos.com/meshtastic-enclosures.html
 https://derekenos.com/mecanum-robot.html
 https://derekenos.com/pill-box.html
 https://derekenos.com/beacon-community-network.html
@@ -45,6 +46,7 @@ https://derekenos.com/tag-audio.html
 https://derekenos.com/tag-bolts.html
 https://derekenos.com/tag-cloudflare.html
 https://derekenos.com/tag-cnc.html
+https://derekenos.com/tag-communitytechnology.html
 https://derekenos.com/tag-decoder.html
 https://derekenos.com/tag-effects.html
 https://derekenos.com/tag-framework.html
