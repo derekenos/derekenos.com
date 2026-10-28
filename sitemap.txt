@@ -1,10 +1,5 @@
 https://derekenos.com/
 https://derekenos.com/index.html
-https://derekenos.com/redirects.html
-https://derekenos.com/dIndex.html
-https://derekenos.com/deMIDulator_overview.html
-https://derekenos.com/about.html
-https://derekenos.com/tags.html
 https://derekenos.com/projects.html
 https://derekenos.com/meshtastic-enclosures.html
 https://derekenos.com/mecanum-robot.html
@@ -37,4 +32,9 @@ https://derekenos.com/project-demidulator.html
 https://derekenos.com/project-beginner-s-box.html
 https://derekenos.com/project-video-feedback-instrument.html
 https://derekenos.com/project-physical-interface-prototype.html
+https://derekenos.com/about.html
+https://derekenos.com/redirects.html
+https://derekenos.com/dIndex.html
+https://derekenos.com/deMIDulator_overview.html
+https://derekenos.com/tags.html
 https://derekenos.com/etc.html
