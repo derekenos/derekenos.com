@@ -1,6 +1,7 @@
 https://derekenos.com/
 https://derekenos.com/index.html
 https://derekenos.com/projects.html
+https://derekenos.com/project-ai-projects.html
 https://derekenos.com/meshtastic-enclosures.html
 https://derekenos.com/mecanum-robot.html
 https://derekenos.com/pill-box.html
